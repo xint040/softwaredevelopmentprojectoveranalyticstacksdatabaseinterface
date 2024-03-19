@@ -79,7 +79,7 @@ class fundamental_questions
       fundamental_questions_proposing_text     
       fundamental_questions_proposing_references
 
-#1000
+
 class references 
       key || references_id
       references_text
