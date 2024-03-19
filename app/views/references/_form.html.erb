@@ -1,0 +1,22 @@
+<%= form_with(model: reference) do |form| %>
+  <% if reference.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(reference.errors.count, "error") %> prohibited this reference from being saved:</h2>
+
+      <ul>
+        <% reference.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :references_text, style: "display: block" %>
+    <%= form.text_field :references_text %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

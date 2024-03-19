@@ -1,0 +1,2 @@
+json.extract! prestacks_as_the_presheaves_category, :id, :prestacks_as_the_presheaves_categories_description, :prestacks_as_the_presheaves_categories_target_categories, :underlying_grothendieck_sites_category, :created_at, :updated_at
+json.url prestacks_as_the_presheaves_category_url(prestacks_as_the_presheaves_category, format: :json)

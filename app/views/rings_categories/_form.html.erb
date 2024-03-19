@@ -1,0 +1,87 @@
+<%= form_with(model: rings_category) do |form| %>
+  <% if rings_category.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(rings_category.errors.count, "error") %> prohibited this rings_category from being saved:</h2>
+
+      <ul>
+        <% rings_category.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :rings_categories_description, style: "display: block" %>
+    <%= form.text_field :rings_categories_description %>
+  </div>
+
+  <div>
+    <%= form.label :rings_categories_charactaristics, style: "display: block" %>
+    <%= form.text_field :rings_categories_charactaristics %>
+  </div>
+
+  <div>
+    <%= form.label :indseminormed, style: "display: block" %>
+    <%= form.text_field :indseminormed %>
+  </div>
+
+  <div>
+    <%= form.label :indnormed, style: "display: block" %>
+    <%= form.text_field :indnormed %>
+  </div>
+
+  <div>
+    <%= form.label :indBanach, style: "display: block" %>
+    <%= form.text_field :indBanach %>
+  </div>
+
+  <div>
+    <%= form.label :monomorphicindseminormed, style: "display: block" %>
+    <%= form.text_field :monomorphicindseminormed %>
+  </div>
+
+  <div>
+    <%= form.label :monomorphicindnormed, style: "display: block" %>
+    <%= form.text_field :monomorphicindnormed %>
+  </div>
+
+  <div>
+    <%= form.label :monomorphicindBanach, style: "display: block" %>
+    <%= form.text_field :monomorphicindBanach %>
+  </div>
+
+  <div>
+    <%= form.label :condensed, style: "display: block" %>
+    <%= form.text_field :condensed %>
+  </div>
+
+  <div>
+    <%= form.label :Clausen_Scholze_analytic_1_more_adic_style, style: "display: block" %>
+    <%= form.text_field :Clausen_Scholze_analytic_1_more_adic_style %>
+  </div>
+
+  <div>
+    <%= form.label :Clausen_Scholze_analytic_2_more_categorical_flavor, style: "display: block" %>
+    <%= form.text_field :Clausen_Scholze_analytic_2_more_categorical_flavor %>
+  </div>
+
+  <div>
+    <%= form.label :adic, style: "display: block" %>
+    <%= form.text_field :adic %>
+  </div>
+
+  <div>
+    <%= form.label :perfectoid, style: "display: block" %>
+    <%= form.text_field :perfectoid %>
+  </div>
+
+  <div>
+    <%= form.label :topologies_on_the_rings, style: "display: block" %>
+    <%= form.text_field :topologies_on_the_rings %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

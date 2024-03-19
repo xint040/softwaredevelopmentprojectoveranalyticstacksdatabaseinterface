@@ -1,0 +1,20 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Fundamental questions</h1>
+
+<div id="fundamental_questions">
+  <% @fundamental_questions.each do |fundamental_question| %>
+    <%= render fundamental_question %>
+    <p>
+      <%= link_to "Show this fundamental question", fundamental_question %>
+    </p>
+  <% end %>
+</div>
+
+
+
+
+
+<%= link_to "New fundamental question", new_fundamental_question_path %>
+
+

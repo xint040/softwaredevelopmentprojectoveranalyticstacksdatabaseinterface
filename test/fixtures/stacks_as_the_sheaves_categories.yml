@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  stacks_as_the_sheaves_categories_description: MyString
+  stacks_as_the_sheaves_categories_target_categories: MyString
+  stacks_as_the_sheaves_categories_over_topologies_can_be_realized: MyString
+  sheafification_from_the_prestacks_as_the_presheaves_category: MyString
+
+two:
+  stacks_as_the_sheaves_categories_description: MyString
+  stacks_as_the_sheaves_categories_target_categories: MyString
+  stacks_as_the_sheaves_categories_over_topologies_can_be_realized: MyString
+  sheafification_from_the_prestacks_as_the_presheaves_category: MyString

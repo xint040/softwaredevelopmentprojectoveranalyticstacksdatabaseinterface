@@ -1,0 +1,2 @@
+class GrothendieckSitesCategory < ApplicationRecord
+end

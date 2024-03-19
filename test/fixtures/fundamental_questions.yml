@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  fundamental_questions_proposing_author: MyString
+  fundamental_questions_proposing_date: MyString
+  fundamental_questions_proposing_text: MyString
+  fundamental_questions_proposing_references: MyString
+
+two:
+  fundamental_questions_proposing_author: MyString
+  fundamental_questions_proposing_date: MyString
+  fundamental_questions_proposing_text: MyString
+  fundamental_questions_proposing_references: MyString

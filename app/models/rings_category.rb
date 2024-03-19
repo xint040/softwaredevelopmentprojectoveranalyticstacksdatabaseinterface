@@ -1,0 +1,2 @@
+class RingsCategory < ApplicationRecord
+end

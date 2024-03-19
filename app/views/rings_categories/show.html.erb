@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @rings_category %>
+
+<div>
+  <%= link_to "Edit this rings category", edit_rings_category_path(@rings_category) %> |
+  <%= link_to "Back to rings categories", rings_categories_path %>
+
+  <%= button_to "Destroy this rings category", @rings_category, method: :delete %>
+</div>

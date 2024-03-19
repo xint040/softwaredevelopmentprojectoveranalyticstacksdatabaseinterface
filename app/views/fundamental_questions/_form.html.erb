@@ -1,0 +1,37 @@
+<%= form_with(model: fundamental_question) do |form| %>
+  <% if fundamental_question.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(fundamental_question.errors.count, "error") %> prohibited this fundamental_question from being saved:</h2>
+
+      <ul>
+        <% fundamental_question.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :fundamental_questions_proposing_author, style: "display: block" %>
+    <%= form.text_field :fundamental_questions_proposing_author %>
+  </div>
+
+  <div>
+    <%= form.label :fundamental_questions_proposing_date, style: "display: block" %>
+    <%= form.text_field :fundamental_questions_proposing_date %>
+  </div>
+
+  <div>
+    <%= form.label :fundamental_questions_proposing_text, style: "display: block" %>
+    <%= form.text_field :fundamental_questions_proposing_text %>
+  </div>
+
+  <div>
+    <%= form.label :fundamental_questions_proposing_references, style: "display: block" %>
+    <%= form.text_field :fundamental_questions_proposing_references %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

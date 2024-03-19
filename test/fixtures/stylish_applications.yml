@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  stylish_applications_title: MyString
+  stylish_applications_related_authors: MyString
+  stylish_applications_related_text: MyString
+  stylish_applications_references: MyString
+
+two:
+  stylish_applications_title: MyString
+  stylish_applications_related_authors: MyString
+  stylish_applications_related_text: MyString
+  stylish_applications_references: MyString

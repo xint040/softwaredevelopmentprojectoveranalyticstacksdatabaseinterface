@@ -1,0 +1,16 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Rings categories</h1>
+
+<div id="rings_categories">
+  <% @rings_categories.each do |rings_category| %>
+    <%= render rings_category %>
+    <p>
+      <%= link_to "Show this rings category", rings_category %>
+    </p>
+  <% end %>
+</div>
+
+
+
+<%= link_to "New rings category", new_rings_category_path %>

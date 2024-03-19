@@ -1,0 +1,2 @@
+json.extract! stacks_as_the_sheaves_category, :id, :stacks_as_the_sheaves_categories_description, :stacks_as_the_sheaves_categories_target_categories, :stacks_as_the_sheaves_categories_over_topologies_can_be_realized, :sheafification_from_the_prestacks_as_the_presheaves_category, :created_at, :updated_at
+json.url stacks_as_the_sheaves_category_url(stacks_as_the_sheaves_category, format: :json)

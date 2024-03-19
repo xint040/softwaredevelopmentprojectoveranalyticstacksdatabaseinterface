@@ -1,0 +1,2 @@
+class LearnersDiscussion < ApplicationRecord
+end

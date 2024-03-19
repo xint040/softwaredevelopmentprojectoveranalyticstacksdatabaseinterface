@@ -1,0 +1,1 @@
+json.partial! "grothendieck_sites_categories/grothendieck_sites_category", grothendieck_sites_category: @grothendieck_sites_category

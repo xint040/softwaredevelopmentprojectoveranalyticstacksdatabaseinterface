@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Stylish applications</h1>
+
+<div id="stylish_applications">
+  <% @stylish_applications.each do |stylish_application| %>
+    <%= render stylish_application %>
+    <p>
+      <%= link_to "Show this stylish application", stylish_application %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New stylish application", new_stylish_application_path %>

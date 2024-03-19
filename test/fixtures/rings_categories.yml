@@ -1,0 +1,33 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  rings_categories_description: MyString
+  rings_categories_charactaristics: MyString
+  indseminormed: MyString
+  indnormed: MyString
+  indBanach: MyString
+  monomorphicindseminormed: MyString
+  monomorphicindnormed: MyString
+  monomorphicindBanach: MyString
+  condensed: MyString
+  Clausen_Scholze_analytic_1_more_adic_style: MyString
+  Clausen_Scholze_analytic_2_more_categorical_flavor: MyString
+  adic: MyString
+  perfectoid: MyString
+  topologies_on_the_rings: MyString
+
+two:
+  rings_categories_description: MyString
+  rings_categories_charactaristics: MyString
+  indseminormed: MyString
+  indnormed: MyString
+  indBanach: MyString
+  monomorphicindseminormed: MyString
+  monomorphicindnormed: MyString
+  monomorphicindBanach: MyString
+  condensed: MyString
+  Clausen_Scholze_analytic_1_more_adic_style: MyString
+  Clausen_Scholze_analytic_2_more_categorical_flavor: MyString
+  adic: MyString
+  perfectoid: MyString
+  topologies_on_the_rings: MyString

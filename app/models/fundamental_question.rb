@@ -1,0 +1,2 @@
+class FundamentalQuestion < ApplicationRecord
+end

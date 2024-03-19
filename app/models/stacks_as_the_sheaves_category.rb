@@ -1,0 +1,2 @@
+class StacksAsTheSheavesCategory < ApplicationRecord
+end

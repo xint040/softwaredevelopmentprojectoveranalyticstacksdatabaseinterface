@@ -1,0 +1,37 @@
+<%= form_with(model: stacks_as_the_sheaves_category) do |form| %>
+  <% if stacks_as_the_sheaves_category.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(stacks_as_the_sheaves_category.errors.count, "error") %> prohibited this stacks_as_the_sheaves_category from being saved:</h2>
+
+      <ul>
+        <% stacks_as_the_sheaves_category.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :stacks_as_the_sheaves_categories_description, style: "display: block" %>
+    <%= form.text_field :stacks_as_the_sheaves_categories_description %>
+  </div>
+
+  <div>
+    <%= form.label :stacks_as_the_sheaves_categories_target_categories, style: "display: block" %>
+    <%= form.text_field :stacks_as_the_sheaves_categories_target_categories %>
+  </div>
+
+  <div>
+    <%= form.label :stacks_as_the_sheaves_categories_over_topologies_can_be_realized, style: "display: block" %>
+    <%= form.text_field :stacks_as_the_sheaves_categories_over_topologies_can_be_realized %>
+  </div>
+
+  <div>
+    <%= form.label :sheafification_from_the_prestacks_as_the_presheaves_category, style: "display: block" %>
+    <%= form.text_field :sheafification_from_the_prestacks_as_the_presheaves_category %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

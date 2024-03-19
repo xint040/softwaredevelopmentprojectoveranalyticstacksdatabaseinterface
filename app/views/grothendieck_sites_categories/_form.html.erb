@@ -1,0 +1,32 @@
+<%= form_with(model: grothendieck_sites_category) do |form| %>
+  <% if grothendieck_sites_category.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(grothendieck_sites_category.errors.count, "error") %> prohibited this grothendieck_sites_category from being saved:</h2>
+
+      <ul>
+        <% grothendieck_sites_category.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :grothendieck_sites_description, style: "display: block" %>
+    <%= form.text_field :grothendieck_sites_description %>
+  </div>
+
+  <div>
+    <%= form.label :grothendieck_topologies, style: "display: block" %>
+    <%= form.text_field :grothendieck_topologies %>
+  </div>
+
+  <div>
+    <%= form.label :underlying_rings_category, style: "display: block" %>
+    <%= form.text_field :underlying_rings_category %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

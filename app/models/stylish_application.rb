@@ -1,0 +1,2 @@
+class StylishApplication < ApplicationRecord
+end

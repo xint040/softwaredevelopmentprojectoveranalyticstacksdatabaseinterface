@@ -1,0 +1,2 @@
+module FundamentalQuestionsHelper
+end

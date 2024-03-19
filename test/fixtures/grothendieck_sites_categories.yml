@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  grothendieck_sites_description: MyString
+  grothendieck_topologies: MyString
+  underlying_rings_category: MyString
+
+two:
+  grothendieck_sites_description: MyString
+  grothendieck_topologies: MyString
+  underlying_rings_category: MyString

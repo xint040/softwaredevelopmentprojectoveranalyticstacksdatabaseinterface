@@ -1,0 +1,2 @@
+module StylishApplicationsHelper
+end

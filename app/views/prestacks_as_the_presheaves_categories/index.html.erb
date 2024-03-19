@@ -1,0 +1,16 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Prestacks as the presheaves categories</h1>
+
+<div id="prestacks_as_the_presheaves_categories">
+  <% @prestacks_as_the_presheaves_categories.each do |prestacks_as_the_presheaves_category| %>
+    <%= render prestacks_as_the_presheaves_category %>
+    <p>
+      <%= link_to "Show this prestacks as the presheaves category", prestacks_as_the_presheaves_category %>
+    </p>
+  <% end %>
+</div>
+
+
+
+<%= link_to "New prestacks as the presheaves category", new_prestacks_as_the_presheaves_category_path %>

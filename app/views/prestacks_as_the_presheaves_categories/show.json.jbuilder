@@ -1,0 +1,1 @@
+json.partial! "prestacks_as_the_presheaves_categories/prestacks_as_the_presheaves_category", prestacks_as_the_presheaves_category: @prestacks_as_the_presheaves_category

@@ -1,0 +1,1 @@
+json.array! @prestacks_as_the_presheaves_categories, partial: "prestacks_as_the_presheaves_categories/prestacks_as_the_presheaves_category", as: :prestacks_as_the_presheaves_category

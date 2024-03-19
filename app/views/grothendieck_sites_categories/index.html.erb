@@ -1,0 +1,18 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Grothendieck sites categories</h1>
+
+<div id="grothendieck_sites_categories">
+  <% @grothendieck_sites_categories.each do |grothendieck_sites_category| %>
+    <%= render grothendieck_sites_category %>
+    <p>
+      <%= link_to "Show this grothendieck sites category", grothendieck_sites_category %>
+    </p>
+  <% end %>
+</div>
+
+
+
+
+
+<%= link_to "New grothendieck sites category", new_grothendieck_sites_category_path %>

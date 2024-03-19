@@ -1,0 +1,32 @@
+<%= form_with(model: prestacks_as_the_presheaves_category) do |form| %>
+  <% if prestacks_as_the_presheaves_category.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(prestacks_as_the_presheaves_category.errors.count, "error") %> prohibited this prestacks_as_the_presheaves_category from being saved:</h2>
+
+      <ul>
+        <% prestacks_as_the_presheaves_category.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :prestacks_as_the_presheaves_categories_description, style: "display: block" %>
+    <%= form.text_field :prestacks_as_the_presheaves_categories_description %>
+  </div>
+
+  <div>
+    <%= form.label :prestacks_as_the_presheaves_categories_target_categories, style: "display: block" %>
+    <%= form.text_field :prestacks_as_the_presheaves_categories_target_categories %>
+  </div>
+
+  <div>
+    <%= form.label :underlying_grothendieck_sites_category, style: "display: block" %>
+    <%= form.text_field :underlying_grothendieck_sites_category %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

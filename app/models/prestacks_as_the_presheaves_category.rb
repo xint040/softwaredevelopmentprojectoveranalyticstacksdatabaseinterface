@@ -1,0 +1,2 @@
+class PrestacksAsThePresheavesCategory < ApplicationRecord
+end
