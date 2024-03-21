@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_03_15_204449) do
+ActiveRecord::Schema[7.1].define(version: 2024_03_19_202629) do
   create_table "fundamental_questions", force: :cascade do |t|
     t.string "fundamental_questions_proposing_author"
     t.string "fundamental_questions_proposing_date"
@@ -36,12 +36,36 @@ ActiveRecord::Schema[7.1].define(version: 2024_03_15_204449) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "learners_notes", force: :cascade do |t|
+    t.integer "reader_id"
+    t.string "learners_notes_title"
+    t.string "learners_notes_date"
+    t.string "learners_notes_description"
+    t.string "learners_notes_text"
+    t.string "learners_notes_more_things_want_to_learn_on_analytic_stacks"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["reader_id"], name: "index_learners_notes_on_reader_id"
+  end
+
   create_table "prestacks_as_the_presheaves_categories", force: :cascade do |t|
     t.string "prestacks_as_the_presheaves_categories_description"
     t.string "prestacks_as_the_presheaves_categories_target_categories"
     t.string "underlying_grothendieck_sites_category"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "readers", force: :cascade do |t|
+    t.string "email", default: "", null: false
+    t.string "encrypted_password", default: "", null: false
+    t.string "reset_password_token"
+    t.datetime "reset_password_sent_at"
+    t.datetime "remember_created_at"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["email"], name: "index_readers_on_email", unique: true
+    t.index ["reset_password_token"], name: "index_readers_on_reset_password_token", unique: true
   end
 
   create_table "references", force: :cascade do |t|

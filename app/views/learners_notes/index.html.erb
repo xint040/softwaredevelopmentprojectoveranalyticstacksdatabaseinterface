@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Learners notes</h1>
+
+<div id="learners_notes">
+  <% @learners_notes.each do |learners_note| %>
+    <%= render learners_note %>
+    <p>
+      <%= link_to "Show this learners note", learners_note %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New learners note", new_learners_note_path %>

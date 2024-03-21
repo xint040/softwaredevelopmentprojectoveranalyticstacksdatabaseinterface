@@ -380,8 +380,6 @@ rails generate devise:views
 
 
 
-
-
 ## Data 
 
 We use the following seeds:

@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @learners_note %>
+
+<div>
+  <%= link_to "Edit this learners note", edit_learners_note_path(@learners_note) %> |
+  <%= link_to "Back to learners notes", learners_notes_path %>
+
+  <%= button_to "Destroy this learners note", @learners_note, method: :delete %>
+</div>

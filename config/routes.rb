@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  devise_for :readers
+  resources :learners_notes
   resources :stylish_applications
   resources :references
   resources :fundamental_questions
@@ -17,8 +19,13 @@ Rails.application.routes.draw do
   # root "posts#index"
   root "stacks_as_the_sheaves_categories#index"
 
+
+  devise_scope :reader do
+    get '/readers/sign_out', to: "devise/sessions#destroy", as: "delete_current_reader_session"
+    get '/readers/sign_in', to: "devise/sessions#create", as: "create_a_reader_session"
+  end
+
   
- 
   
 
 end

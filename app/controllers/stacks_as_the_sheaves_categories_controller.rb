@@ -1,4 +1,5 @@
 class StacksAsTheSheavesCategoriesController < ApplicationController
+  require 'csv'
   before_action :set_stacks_as_the_sheaves_category, only: %i[ show edit update destroy ]
 
   # GET /stacks_as_the_sheaves_categories or /stacks_as_the_sheaves_categories.json
@@ -103,6 +104,7 @@ class StacksAsTheSheavesCategoriesController < ApplicationController
       format.json { head :no_content }
     end
   end
+
 
   
 

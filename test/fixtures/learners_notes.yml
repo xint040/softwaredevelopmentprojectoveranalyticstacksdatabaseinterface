@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  learners_notes_title: MyString
+  learners_notes_date: MyString
+  learners_notes_description: MyString
+  learners_notes_text: MyString
+  learners_notes_more_things_want_to_learn_on_analytic_stacks: MyString
+
+two:
+  learners_notes_title: MyString
+  learners_notes_date: MyString
+  learners_notes_description: MyString
+  learners_notes_text: MyString
+  learners_notes_more_things_want_to_learn_on_analytic_stacks: MyString

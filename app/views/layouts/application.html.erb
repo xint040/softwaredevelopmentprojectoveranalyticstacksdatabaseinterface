@@ -14,6 +14,8 @@
     <%= yield %> <br/>
   </body>
 
+
+  <%= link_to 'Learners Notes Page', learners_notes_path %> <br/>
   <%= link_to 'Stylish Applications Page', stylish_applications_path %> <br/>
   <%= link_to 'References Page', references_path %>  <br/>
   <%= link_to 'Learners Discussion Page', learners_discussions_path %>  <br/>
@@ -22,6 +24,15 @@
   <%= link_to 'Grothendieck Sites Page', grothendieck_sites_categories_path %>  <br/>
   <%= link_to 'Prestacks as The Presheaves Categories Page', prestacks_as_the_presheaves_categories_path %>  <br/>
   <%= link_to 'Stacks as The Sheaves Categories Page and Entry Page', stacks_as_the_sheaves_categories_path %>  <br/>
+
+  <% if reader_signed_in? %>
+  <%= link_to 'The Link for Log Out', delete_current_reader_session_path %> <br/>
+  <% else %>
+  <%= link_to 'The Link for Log In Page', create_a_reader_session_path %> <br/>
+  <% end %>
+
+
+
 
   <h2>
   References
