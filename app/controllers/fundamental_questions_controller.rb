@@ -3,15 +3,13 @@ class FundamentalQuestionsController < ApplicationController
 
   # GET /fundamental_questions or /fundamental_questions.json
   def index
-    params[:sortingqueryindicator]
-
     sql_sorting_fundamental_questions = <<~SQL
       select * 
       from fundamental_questions
       order by "fundamental_questions_proposing_date"
     SQL
 
-    if params[:sortingqueryindicator] == true
+    if params[:sortingqueryindicator] 
       @fundamental_questions = ActiveRecord::Base.connection.execute(sql_sorting_fundamental_questions)
     else 
       @fundamental_questions = ActiveRecord::Base.connection.execute('select * from fundamental_questions')    
