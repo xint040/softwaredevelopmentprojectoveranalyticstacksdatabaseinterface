@@ -3,8 +3,33 @@ class FundamentalQuestionsController < ApplicationController
 
   # GET /fundamental_questions or /fundamental_questions.json
   def index
-    #ActiveRecord::Base.connection.execute('select * from fundamental_questions')
-    @fundamental_questions = FundamentalQuestion.all
+    params[:sortingqueryindicator]
+
+    sql_sorting_fundamental_questions = <<~SQL
+      select * 
+      from fundamental_questions
+      order by "fundamental_questions_proposing_date"
+    SQL
+
+    if params[:sortingqueryindicator] == true
+      @fundamental_questions = ActiveRecord::Base.connection.execute(sql_sorting_fundamental_questions)
+    else 
+      @fundamental_questions = ActiveRecord::Base.connection.execute('select * from fundamental_questions')    
+    end
+
+
+
+
+
+    
+
+
+    
+
+
+
+
+
   end
 
   # GET /fundamental_questions/1 or /fundamental_questions/1.json
@@ -103,6 +128,8 @@ class FundamentalQuestionsController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  
 
 
   
