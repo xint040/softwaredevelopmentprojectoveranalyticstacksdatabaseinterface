@@ -4,18 +4,18 @@
 
 <div id="fundamental_questions">
   <% @fundamental_questions.each do |fundamental_question| %>
-    <%= fundamental_question[0] %>
-    <%= fundamental_question[1] %>
-    <%= fundamental_question[2] %>
-    <%= fundamental_question[3] %>
-    <%= fundamental_question[4] %>
+    <%= fundamental_question[0] %> <br/>
+    <%= fundamental_question[1] %> <br/>
+    <%= fundamental_question[2] %> <br/>
+    <%= fundamental_question[3] %> <br/>
+    <%= fundamental_question[4] %> <br/>
     <p>
       <%= link_to "Show this fundamental question", fundamental_question_path(fundamental_question[0]) %>
     </p>
   <% end %>
 </div>
 
-<%= link_to "Sorting the Questions by Date", fundamental_questions_path(sortingqueryindicator: true), method: :get %>
+<%= link_to "Sorting the Questions by Author", fundamental_questions_path(sortingqueryindicator: true), method: :get %>
 
 <%= link_to "New fundamental question", new_fundamental_question_path %>
 

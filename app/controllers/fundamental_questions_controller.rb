@@ -6,7 +6,7 @@ class FundamentalQuestionsController < ApplicationController
     sql_sorting_fundamental_questions = <<~SQL
       select * 
       from fundamental_questions
-      order by "fundamental_questions_proposing_date"
+      order by "fundamental_questions_proposing_author"
     SQL
 
     if params[:sortingqueryindicator] 
